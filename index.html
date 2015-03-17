@@ -10,7 +10,7 @@
   angular.module('app', ['facebook'])
 
     .config(function(FacebookProvider) {
-      FacebookProvider.init('433847516707016');
+      FacebookProvider.init('291899944267597');
     })
 
     .controller('mainCtrl', function ($scope, Facebook) {
@@ -89,14 +89,14 @@
     <pre>username: <span id="api_first_name" ng-bind="user.first_name"></span></pre>
   </body>
   
-  <div ng-app="myApp" ng-controller="contentController">
+  <!-- <div ng-app="myApp" ng-controller="contentController">
   <table>
   <tr ng-repeat="x in feed_data">
     <td>{{x.updated_time}}</td>
     <td>{{x.message}}</td>
   </tr>
   </table>
-  </div>
-  <script src="js/contentController.js"></script>
+   </div>
+  <script src="js/contentController.js"></script>-->
 </body>
 </html>
