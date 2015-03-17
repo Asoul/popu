@@ -5,3 +5,16 @@ app.controller('contentController', ['$scope', '$http', function($scope,$http) {
     $scope.feed_data = response.data;
   })
 }]);
+
+var module = angular.module('bnx.module.facebook', []);
+module.provider ('facebook', function facebookProvider () {
+var initialized = false;
+var defaultParams = { appId: '291899944267597', status: true, cookie: true, xfbml: true };
+var facebookEvents = {
+  'auth': [
+    'authResponseChange', 
+    'statusChange', 
+    'login', 
+    'logout'
+  ]
+};
